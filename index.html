@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yapita</title>
+    <link rel="icon" href="images/yapita-icon-ico.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* Estilos personalizados */
@@ -32,12 +33,36 @@
             margin-top: 2rem;
         }
         .highlight-section {
-            padding: 2rem 0;
-            background: linear-gradient(135deg, #DB040B 0%, #b70309 100%);
+            padding: 1rem 0.5rem;
+            background-color: #DB040B;
             color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
         }
+
+        .highlight-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #fff;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-section p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0;
+            font-weight: 500;
+            line-height: 1.6;
+        }
+
+        .highlight-section p span {
+            color: #f0f2f5;
+            font-weight: bold;
+        }
+
         .highlight-section .section-title {
             color: white;
         }
@@ -49,9 +74,8 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .info-section img {
-            max-width: 80%;
+            max-width: 42%;
             height: auto;
-            border-radius: 10px;
             transition: transform 0.3s;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         }
@@ -78,6 +102,24 @@
         .download-btn:hover {
             background-color: #b70309;
         }
+        .wave {
+            display: block;
+            width: 110%;
+            height: auto;
+            position: relative;
+            bottom: -55px;
+        }
+
+        #bg-info {
+            position: relative;
+            top: 0;
+        }
+        
+        #info {
+            padding: 0;
+        }
+        
+
     </style>
 </head>
 
@@ -114,11 +156,14 @@
     </nav>
 
     <!-- Información sobre Yapita -->
-    <section id="info" class="container text-center my-5 highlight-section col-lg-8">
-        <h1 class="section-title display-4">¿Qué es Yapita?</h1>
-        <p class="font-weight-bold px-lg-5">Yapita es la aplicación que necesitas para comprar la comida a un precio más cómodo y sin perder calidad. Con
-            Yapita, puedes encontrar ofertas increíbles cerca tuyo. Únete a miles de usuarios satisfechos que ya
-            están disfrutando de Yapita.</p>
+    <section id="info" class="highlight-section text-center">
+        <h1 class="display-4">Conoce a Yapita</h1>
+        <p><span>Yapita</span> es la app que necesitas para descubrir <span>ofertas exclusivas</span> en alimentos frescos y de calidad, ¡sin comprometer tu bolsillo! Con Yapita, puedes encontrar los mejores precios cerca de ti y unirte a miles de usuarios que ya están ahorrando. ¡Explora, ahorra y disfruta con Yapita!</p>
+        <div id="bg-info">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#f0f2f5" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,218.7C384,213,480,203,576,176C672,149,768,107,864,112C960,117,1056,171,1152,186.7C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
     </section>
 
     <!-- Subsecciones de información -->
@@ -173,17 +218,17 @@
             <div class="col-md-4 team-member text-center">
                 <img src="images/Team-sebas.png" alt="Miembro del Equipo" class="rounded-circle" width="120">
                 <h5>Alvaro Montes</h5>
-                <p>Rol del miembro en el equipo</p>
+                <p>CEO</p>
             </div>
             <div class="col-md-4 team-member text-center">
                 <img src="images/Team-Jeff.jpg" alt="Miembro del Equipo" class="rounded-circle" width="120">
                 <h5>Jefferson Choquehuanca</h5>
-                <p>Rol del miembro en el equipo</p>
+                <p>Gestor de Innovación</p>
             </div>
             <div class="col-md-4 team-member text-center">
                 <img src="images/Team-fabian.png" alt="Miembro del Equipo" class="rounded-circle" width="120">
                 <h5>Fabian Salamanca</h5>
-                <p>Rol del miembro en el equipo</p>
+                <p>Desarrollador de software</p>
             </div>
         </div>
     </section>
